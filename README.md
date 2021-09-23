@@ -4,7 +4,7 @@
 - Colna el repositorio
 ```console
 ┌──(root💀MrTechX)-[~]
-└─# git clone https://github.com/sherlock-project/sherlock.git
+└─# git clone https://github.com/Mr-TechX/TechX_URL.git
 ```
 
 - Entra al directorio
