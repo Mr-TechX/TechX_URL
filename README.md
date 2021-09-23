@@ -33,3 +33,4 @@
 └─# python3 cut.py
 ```
 <img src="https://raw.githubusercontent.com/Mr-TechX/TechX_URL/main/cap.jpg">
+<!-- Probado en Kali Linux y Ubuntu -->
