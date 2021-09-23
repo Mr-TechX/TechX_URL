@@ -32,4 +32,4 @@
 ┌──(root💀MrTechX)-[TechX_URL]
 └─# python3 cut.py
 ```
-<img href="https://raw.githubusercontent.com/Mr-TechX/TechX_URL/main/cap.jpg">
+<img src="https://raw.githubusercontent.com/Mr-TechX/TechX_URL/main/cap.jpg">
