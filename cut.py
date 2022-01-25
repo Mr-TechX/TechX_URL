@@ -3,51 +3,60 @@
 # PROJECT : URL Shortener with Python
 # VERSION : 1.5.0
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-import time
-import pyshorteners
-import os
+import gdshortener                                                                              
+import os                                                                                       
+import time                                                                                     
 from colorama import Fore,Back,Style
-def clearConsole():
-    command = 'clear'
-    if os.name in ('nt', 'dos'):  
-        command = 'cls'
-    os.system(command)
-clearConsole()
+def ascii():                                                                                        
+    print(Fore.LIGHTRED_EX+'''                                                                                   
+                  @@@  @@@,            
+            (@@@@@@@  @@@@@@**        
+        @@@@@@@@@@@*  @@@@@@***@@@@   
+      @@@@@@@@@*****,@@@@@@@***@@@@@@ 
+      @@@@/    *@@@@@@@@@@@,   @@@@@@ 
+      ******@@@@@@@@@@@*****@@@@@@@@@ 
+       *@@@@@@@@@@@    *@@@@@@@@@@@   
+      @@@@@@@@@****,@@@@@@@@@@@*****, 
+      @@@@@    @@@@@@@@@@@/    *@@@@@ 
+      @@@@@***@@@@@@@@******@@@@@@@@@ 
+       ,@@@***@@@@@@   ,@@@@@@@@@@@   
+            **@@@@@@   @@@@@@@        
+                 @@@   @@@ 
+ _______        _    __   __  _    _ _____  _      
+|__   __|      | |   \ \ / / | |  | |  __ \| |     
+   | | ___  ___| |__  \ V /  | |  | | |__) | |     
+   | |/ _ \/ __| '_ \  > <   | |  | |  _  /| |     
+   | |  __| (__| | | |/ . \  | |__| | | \ \| |____ 
+   |_|\___|\___|_| |_/_/ \_\  \____/|_|  \_|______|
 
-print(Fore.LIGHTRED_EX+'''
-
-
- /$$$$$$$$                  /$$       /$$   /$$       /$$   /$$ /$$$$$$$  /$$      
-|__  $$__/                 | $$      | $$  / $$      | $$  | $$| $$__  $$| $$      
-   | $$  /$$$$$$   /$$$$$$$| $$$$$$$ |  $$/ $$/      | $$  | $$| $$  \ $$| $$      
-   | $$ /$$__  $$ /$$_____/| $$__  $$ \  $$$$/       | $$  | $$| $$$$$$$/| $$      
-   | $$| $$$$$$$$| $$      | $$  \ $$  >$$  $$       | $$  | $$| $$__  $$| $$      
-   | $$| $$_____/| $$      | $$  | $$ /$$/\  $$      | $$  | $$| $$  \ $$| $$      
-   | $$|  $$$$$$$|  $$$$$$$| $$  | $$| $$  \ $$      |  $$$$$$/| $$  | $$| $$$$$$$$
-   |__/ \_______/ \_______/|__/  |__/|__/  |__/       \______/ |__/  |__/|________/
-
+   code by: MrTechX | ToolsX | UlisesCamacho
 
 ''')
-url = input(Fore.LIGHTGREEN_EX+"💀 Ingresa tu link => "+Fore.LIGHTRED_EX)
 
-shrt = pyshorteners.Shortener()
+def clear():
+    # Windows
+    if os.name == "nt":
+        os.system("cls")
+    # Linux
+    else:
+        os.system("clear")
 
-nurl = shrt.tinyurl.short(url) 
+def load():
+    print("Generando tu nuevo url💀...")
+    
+def get_url_shortened():
+    request_gdshortener = gdshortener.ISGDShortener()
+    url = input(Fore.LIGHTGREEN_EX+"💀 Ingresa tu link =>"+Fore.LIGHTRED_EX)
+    custom_url_part = input(Fore.LIGHTGREEN_EX+"Ingresa palabras clave💀 >>> "+Fore.LIGHTRED_EX)
+    true_custom_url_part = "https://" + custom_url_part + "@"
+    load()
+    time.sleep(1)
+    shortened_url = request_gdshortener.shorten(url)
+    newurl = shortened_url[0]
+    final_url = newurl.replace("https://", true_custom_url_part)
+    print(Fore.LIGHTGREEN_EX+"Toma tu nuevo link💀 >>> "+Fore.LIGHTRED_EX + final_url+Fore.LIGHT
+BLUE_EX)
 
-print(Fore.LIGHTGREEN_EX+"🔥 Toma tu nuevo link => " +Fore.LIGHTBLUE_EX+nurl)
-
-time.sleep(4)
-print(Fore.LIGHTMAGENTA_EX+'''
-
-
-
-coded by: MrTechX | ToolsX | UlisesCamacho                            
- /$$      /$$        /$$$$$$$$                  /$$       /$$   /$$
-| $$$    /$$$       |__  $$__/                 | $$      | $$  / $$
-| $$$$  /$$$$  /$$$$$$ | $$  /$$$$$$   /$$$$$$$| $$$$$$$ |  $$/ $$/
-| $$ $$/$$ $$ /$$__  $$| $$ /$$__  $$ /$$_____/| $$__  $$ \  $$$$/ 
-| $$  $$$| $$| $$  \__/| $$| $$$$$$$$| $$      | $$  \ $$  >$$  $$ 
-| $$\  $ | $$| $$      | $$| $$_____/| $$      | $$  | $$ /$$/\  $$
-| $$ \/  | $$| $$      | $$|  $$$$$$$|  $$$$$$$| $$  | $$| $$  \ $$
-|__/     |__/|__/      |__/ \_______/ \_______/|__/  |__/|__/  |__/
-''' )
+clear()
+ascii()
+get_url_shortened()
