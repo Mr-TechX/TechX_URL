@@ -1,6 +1,6 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # AUTHOR : MrTechX | ToolsX | UlisesCamacho
-# PROJECT : URL Shortener with Python
+# PROJECT : URL Spoofer with Python
 # VERSION : 1.5.0
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 import gdshortener                                                                              
