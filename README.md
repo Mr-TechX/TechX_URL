@@ -20,7 +20,7 @@
 
 
 ┌──(root💀MrTechX)-[TechX_URL]
-└─# pip install pyshorteners
+└─# pip install gdshortener
 
 
 ┌──(root💀MrTechX)-[TechX_URL]
@@ -32,6 +32,3 @@
 ┌──(root💀MrTechX)-[TechX_URL]
 └─# python3 cut.py
 ```
-<img src="https://raw.githubusercontent.com/Mr-TechX/TechX_URL/main/cap.jpg">
-<img src="https://raw.githubusercontent.com/Mr-TechX/TechX_URL/main/cap1.jpg">
-<!-- Probado en Kali Linux y Ubuntu -->
