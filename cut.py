@@ -1,7 +1,7 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # AUTHOR : MrTechX | ToolsX | UlisesCamacho
 # PROJECT : URL Spoofer with Python
-# VERSION : 1.5.0
+# VERSION : 1.6.0
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 import gdshortener                                                                              
 import os                                                                                       
@@ -46,7 +46,7 @@ def load():
     
 def get_url_shortened():
     request_gdshortener = gdshortener.ISGDShortener()
-    url = input(Fore.LIGHTGREEN_EX+"💀 Ingresa tu link =>"+Fore.LIGHTRED_EX)
+    url = input("💀 Ingresa tu link =>")
     custom_url_part = input(Fore.LIGHTGREEN_EX+"Ingresa palabras clave💀 >>> "+Fore.LIGHTRED_EX)
     true_custom_url_part = "https://" + custom_url_part + "@"
     load()
