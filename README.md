@@ -16,15 +16,7 @@
 * Instalemos lo necesario
 ```console
 ┌──(root💀MrTechX)-[TechX_URL]
-└─# apt install python3
-
-
-┌──(root💀MrTechX)-[TechX_URL]
-└─# pip install gdshortener
-
-
-┌──(root💀MrTechX)-[TechX_URL]
-└─# pip install colorama
+└─# pip install -r requirements.txt
 ```
 
 * Listo ahora puedes usarlo
